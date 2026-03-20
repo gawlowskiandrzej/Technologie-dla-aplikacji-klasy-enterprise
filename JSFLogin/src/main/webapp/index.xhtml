@@ -41,9 +41,10 @@
                     id="acceptCheckBox"
                     binding="#{loginBean.acceptCheckbox}"
                     valueChangeListener="#{loginBean.activateButton}"
-                    onchange="submit()"
-                    immediate="true"
-            /> <h:outputText value="I accept the terms of service"/>
+                    immediate="true">
+                <f:ajax execute="@this" render="loginButton"/>
+            </h:selectBooleanCheckbox>
+            <h:outputText value="I accept the terms of service"/>
         </h:form>
     </h:body>
 </f:view>
