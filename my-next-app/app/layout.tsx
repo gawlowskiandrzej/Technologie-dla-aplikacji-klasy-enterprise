@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +28,20 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <div className="flex items-center"> 
+          <Image width={100} height={100} src="/banana.jpg" alt="Banana logo"/>
+          <h1 className="mb-4 text-4xl font-bold tracking-tight"> 
+          
+          Next.js CRUD App 
+          </h1> 
+          </div> 
+          <hr/> 
+          <p>&nbsp;</p> 
+        {children}
+        <p>&nbsp;</p> 
+        Created by Andrzej Gawłowski
+        </body>
     </html>
   );
 }

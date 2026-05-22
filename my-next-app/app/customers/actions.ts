@@ -3,6 +3,7 @@
 import { revalidatePath } from "next/cache"; 
 import { customerService } from "@/lib/services/customer-service"; 
 import type { CustomerInput } from "@/lib/models/customer"; 
+import { redirect } from "next/dist/client/components/navigation";
  
 export async function createCustomerAction(formData: FormData) { 
   const input: CustomerInput = { 
@@ -29,4 +30,21 @@ export async function deleteCustomerAction(formData: FormData) {
  
   await customerService.delete(id); 
   revalidatePath("/customers"); 
+} 
+export async function updateCustomerAction(formData: FormData) { 
+  const id = Number(formData.get("id")); 
+ 
+  const input: CustomerInput = { 
+    firstName: String(formData.get("firstName") ?? "").trim(), 
+    lastName: String(formData.get("lastName") ?? "").trim(), 
+    email: String(formData.get("email") ?? "").trim(), 
+  }; 
+ 
+  if (!input.firstName || !input.lastName || !input.email) { 
+    throw new Error("firstName, lastName, email are required"); 
+  } 
+ 
+  await customerService.update(id, input); 
+ 
+  redirect("/customers"); 
 } 

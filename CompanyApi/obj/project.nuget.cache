@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rwiZ5swjCZM=",
+  "dgSpecHash": "57kJftmYhNw=",
   "success": true,
   "projectFilePath": "C:\\Users\\andrz\\IdeaProjects\\Technologie-dla-aplikacji-klasy-enterprise\\CompanyApi\\CompanyApi.csproj",
   "expectedPackageFiles": [
@@ -139,7 +139,7 @@
     {
       "code": "NU1901",
       "level": "Warning",
-      "message": "Pakiet „NuGet.Packaging” 6.12.1 ma znane niska luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg",
+      "message": "Package 'NuGet.Packaging' 6.12.1 has a known low severity vulnerability, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg",
       "projectPath": "C:\\Users\\andrz\\IdeaProjects\\Technologie-dla-aplikacji-klasy-enterprise\\CompanyApi\\CompanyApi.csproj",
       "warningLevel": 1,
       "filePath": "C:\\Users\\andrz\\IdeaProjects\\Technologie-dla-aplikacji-klasy-enterprise\\CompanyApi\\CompanyApi.csproj",
@@ -151,7 +151,7 @@
     {
       "code": "NU1901",
       "level": "Warning",
-      "message": "Pakiet „NuGet.Protocol” 6.12.1 ma znane niska luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg",
+      "message": "Package 'NuGet.Protocol' 6.12.1 has a known low severity vulnerability, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg",
       "projectPath": "C:\\Users\\andrz\\IdeaProjects\\Technologie-dla-aplikacji-klasy-enterprise\\CompanyApi\\CompanyApi.csproj",
       "warningLevel": 1,
       "filePath": "C:\\Users\\andrz\\IdeaProjects\\Technologie-dla-aplikacji-klasy-enterprise\\CompanyApi\\CompanyApi.csproj",
